@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+<h1>ECUSSONS</h1>
+
+<p><a href="/index">ACCUEIL</a></p>  
+
+<div class="maincontainer">
+      
+{% for article in articles %}
+    
+    <div class="item">
+            <a href="/article/{{ article.id }}">
+                <div class="backgroundphoto">
+                    <div class="photo">
+                        <img src="{{ article.image }}" height="100px" width="auto" border-radius = "50px"/>
+                    </div>
+                   
+                    <p>N°{{ article.id }}</p>
+                    <p>{{ article.title }}</p>
+                    <p>{{ article.description  }}</p>
+                    
+                </div>
+            </a>     
+    </div>
+
+{% endfor %}
+
+</div>
+    
+{% endblock %}

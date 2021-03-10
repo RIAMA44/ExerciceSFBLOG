@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+     
+
+{% block body %}
+
+<h1>ARTICLE</h1>
+
+<p><a href="/index">ACCUEIL</a></p>  
+            
+ <div class="maincontainer">
+      
+        <div class="item">
+            <h2><a href="/index"<h2>   
+
+            <div class="backgroundphoto">
+                <div class="photo">
+                    <img src="{{ asset('' ~ article.image ~'') }}" height="200px" width="auto" ;>
+                </div>
+                    </div>
+                    <h1>N°{{ article.id }}</h1>
+                    <h2>{{ article.title }}</h2>
+                    <h2>{{ article.description  }}</h2>
+                    </div>
+            </div>
+
+        </div>
+</div>
+
+
+{% endblock %}
+
+

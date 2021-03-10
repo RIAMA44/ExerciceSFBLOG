@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+html { margin: 0;}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    margin: 10vh,10vh, 10vh, 10vh;
+    font-family: 'Roboto', sans-serif;
+    color: #1E5049; 
+}
+
+h1 { margin-left: 8%;}
+
+h2,p{
+    margin-left: 8%; 
+    text-decoration:none; 
+    cursor: pointer;
+    text-transform: none;
+    color :#1E5049;
+}
+
+
+.photo{
+    display:flex;
+    text-align: center;
+    justify-content: space-evenly;
+    clip-path:ellipse(50% 50%);
+}
+
+.item{
+    display: flex;
+    flex-direction:column;      
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-evenly;              
+}
+
+.item > h1 { font-size: 15px; margin-top: 15px; margin-bottom: 5px;}
+.item > p  { font-size: 12px; margin-top: 10px;}
+
+.maincontainer{
+    display:flex;
+    padding-top: 20px;
+    width: 100%; 
+    justify-content: space-evenly;
+    margin-top:70px;
+    align-items: center;
+    background-color: black ;
+    background: rgb(203,175,151);
+    background: linear-gradient(180deg, rgba(203,175,151,1) 0%,
+     rgba(203,175,151,0.9981034650188201) 20%, rgba(0,212,255,0) 100%);  
+}
+
+.formulaire{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin-left: 250px; 
+}
+.formulaire input{
+    margin: 5px;
+    padding: 14px 50px;
+    flex-direction: column;
+    border-radius: 15px;
+    border: #1E5049;
+    border-style: solid;
+    width: 500px; 
+    align-items: center;  
+}
+
+
+button{
+    background-color:#1E5049;
+    color: #cbaf97;
+    border-radius:15px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 14px 50px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    margin-right: 0px;
+
+}
+
+.listindex{
+    display: flex;
+    align-items: center;
+    flex-wrap:nowrap;
+    flex-direction: column; 
+
+}
+.listindex a {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none;
+    color :#cbaf97;
+}
+.listindex a:hover{
+    color :#d87f31;
+    transition:0.5s;
+    text-transform: none;
+}
+.footerindex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.block{
+    display: flex;
+    align-items:center;
+    flex-wrap:nowrap;
+    flex-direction: column; 
+    margin-left: 50%;
+    margin: 0px;
+}
+
+.block img{
+    align-items:center;
+}

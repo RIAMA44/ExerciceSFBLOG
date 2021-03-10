@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<h1>FORMULAIRE DE CREATION D'ARTICLE </h1>
+
+<p><a href="/index">ACCUEIL</a></p>  
+
+<form class="formulaire" method="POST" action="/formulaire">
+
+<div class="input">
+{{ form(form) }}
+</div>
+             
+</form> 
+    
+</div>
+{% endblock %}
